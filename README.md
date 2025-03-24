@@ -3,39 +3,8 @@
 ##  Project Overview
 The aim of this project is to train an RL agent to play an Atari game by utilizing Stable Baselines3 and Gymnasium in conjunction with Deep Q-Learning. Training the agent and then assessing its performance with a trained model comprise the project.
 
-## 🏆 Roles & Contributions  
-
-### 1️ **Dimitri – Hyperparameter Optimization, Model Training & Environment Setup**  
-Dimitri led the **optimization of model training**, testing multiple hyperparameter configurations to enhance agent performance. He experimented with different **learning rates, discount factors, batch sizes, and exploration strategies**, assessing their impact on training stability and convergence speed.  
-- Set up and fine-tuned **Stable Baselines3** for efficient training.  
-- Conducted controlled experiments with **CNN and MLP policies** to determine the best-performing architecture.  
-- Managed training logs, ensuring smooth execution in Google Colab and resolving runtime issues.  
-- Implemented **automated model checkpointing**, preventing data loss during long training sessions.  
-
-### 2️ **Charite – Performance Analysis, Reward Tracking & Evaluation Framework**  
-Charite was responsible for **analyzing and interpreting model performance** across different training runs. She ensured that episode rewards, learning curves, and model behaviors were properly documented.  
-- Developed **custom evaluation scripts** (play.py) to test trained agents in real-time.  
-- Processed raw **training logs** to extract meaningful insights on **reward progression and exploration efficiency**.  
-- Implemented functions for **tracking episode performance metrics**, such as **average rewards, exploration rate decay, and policy stability**.  
-- Contributed to the **comparison of CNN vs. MLP policies**, identifying strengths and weaknesses based on collected data.  
-
-### 3️ **Guled – Visualization, Documentation & Results Interpretation**  
-Guled handled the **visual representation of data**, making complex results more digestible through intuitive graphs and tables. His work ensured that model comparisons were clear and backed by evidence.  
-- Designed **performance graphs** to visualize trends in **training rewards, loss functions, and episode durations**.  
-- Created comparative plots to show how **different policies performed over time**.  
-- Structured the **README documentation**, ensuring clear explanations of the **hyperparameter experiments and evaluation findings**.  
-- Compiled **final conclusions** from all experiments, ensuring that results were presented effectively for decision-making.  
-
-###  **Collaboration & Final Integration**  
-Beyond individual tasks, we worked together to ensure:  
-✔ **Seamless execution** of experiments, troubleshooting runtime issues collaboratively.  
-✔ **Thorough documentation** of results, allowing for reproducibility.  
-✔ **Well-structured comparisons**, ensuring that findings were backed by clear evidence.  
-
-
 ## Environment Selection
 We selected an Atari game from the Gymnasium collection for training and evaluation. The environment provides a challenging yet structured reinforcement learning task that enables the agent to improve over time through deep Q-learning.
-
 
 ## 📜 Training Scripts
 ### 1️⃣ Training Script (train.py)
@@ -71,10 +40,37 @@ From the experiments, **CNNPolicy outperformed MLPPolicy** by extracting **spati
 1️⃣ **Training on CPU was slow** – We leveraged GPU resources for faster training.
 2️⃣ **Rendering issues in headless environments** – We recorded gameplay for later evaluation.
 
-## 🎬 Evaluation: Running play.py
+## 🎬 Evaluation and conclusion: Running play.py
 After training, the agent was evaluated based on gameplay performance. The trained agent demonstrated improved decision-making and higher rewards compared to the baseline model. **The Episode Reward** achieved during evaluation was **10**.
 
+## 🏆 Roles & Contributions  
 
-## Conclusion
-This project successfully trained an RL agent using Deep Q-Learning to play an Atari game. By tuning hyperparameters and evaluating performance, we demonstrated the effectiveness of reinforcement learning in complex environments. Future work could explore alternative RL algorithms such as PPO or A2C for comparison.
+### 1️ **Dimitri – Hyperparameter Optimization, Model Training & Environment Setup**  
+Dimitri led the **optimization of model training**, testing multiple hyperparameter configurations to enhance agent performance. He experimented with different **learning rates, discount factors, batch sizes, and exploration strategies**, assessing their impact on training stability and convergence speed.  
+- Set up and fine-tuned **Stable Baselines3** for efficient training.  
+- Conducted controlled experiments with **CNN and MLP policies** to determine the best-performing architecture.  
+- Managed training logs, ensuring smooth execution in Google Colab and resolving runtime issues.  
+- Implemented **automated model checkpointing**, preventing data loss during long training sessions.  
+
+### 2️ **Charite – Performance Analysis, Reward Tracking & Evaluation Framework**  
+Charite was responsible for **analyzing and interpreting model performance** across different training runs. She ensured that episode rewards, learning curves, and model behaviors were properly documented.  
+- Developed **custom evaluation scripts** (play.py) to test trained agents in real-time.  
+- Processed raw **training logs** to extract meaningful insights on **reward progression and exploration efficiency**.  
+- Implemented functions for **tracking episode performance metrics**, such as **average rewards, exploration rate decay, and policy stability**.  
+- Contributed to the **comparison of CNN vs. MLP policies**, identifying strengths and weaknesses based on collected data.  
+
+### 3️ **Guled – Visualization, Documentation & Results Interpretation**  
+Guled handled the **visual representation of data**, making complex results more digestible through intuitive graphs and tables. His work ensured that model comparisons were clear and backed by evidence.  
+- Designed **performance graphs** to visualize trends in **training rewards, loss functions, and episode durations**.  
+- Created comparative plots to show how **different policies performed over time**.  
+- Structured the **README documentation**, ensuring clear explanations of the **hyperparameter experiments and evaluation findings**.  
+- Compiled **final conclusions** from all experiments, ensuring that results were presented effectively for decision-making.  
+
+###  **Collaboration & Final Integration**  
+Beyond individual tasks, we worked together to ensure:  
+✔ **Seamless execution** of experiments, troubleshooting runtime issues collaboratively.  
+✔ **Thorough documentation** of results, allowing for reproducibility.  
+✔ **Well-structured comparisons**, ensuring that findings were backed by clear evidence.  
+
+
 
