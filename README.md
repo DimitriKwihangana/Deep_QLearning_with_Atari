@@ -1,4 +1,4 @@
-# Deep Q-Learning with Atari
+# Deep Q-Learning with Atari ([Video link]([url](https://drive.google.com/file/d/1ZdCODAwb2h0Kl1zGzK1hkf5l8Pa9aS33/view?usp=sharing)))
 
 ## 📌 Project Overview
 The aim of this project is to train an RL agent to play an Atari game by utilizing Stable Baselines3 and Gymnasium in conjunction with Deep Q-Learning. Training the agent and then assessing its performance with a trained model comprise the project.
@@ -37,11 +37,6 @@ This script loads the trained model and runs the agent in the environment for ev
 ## 🎬 Evaluation: Running play.py
 After training, the agent was evaluated based on gameplay performance. The trained agent demonstrated improved decision-making and higher rewards compared to the baseline model.
 
-## ✔ Submission Checklist
-- [x] `train.py` & `play.py` scripts included
-- [x] Trained model saved as `dqn_model.zip`
-- [x] Hyperparameter tuning table added
-- [x] Evaluation conducted with recorded gameplay
 
 ## 🎯 Conclusion
 This project successfully trained an RL agent using Deep Q-Learning to play an Atari game. By tuning hyperparameters and evaluating performance, we demonstrated the effectiveness of reinforcement learning in complex environments. Future work could explore alternative RL algorithms such as PPO or A2C for comparison.
