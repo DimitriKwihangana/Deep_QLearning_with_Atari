@@ -13,6 +13,9 @@ The aim of this project is to train an RL agent to play an Atari game by utilizi
 ## Environment Selection
 We selected an Atari game from the Gymnasium collection for training and evaluation. The environment provides a challenging yet structured reinforcement learning task that enables the agent to improve over time through deep Q-learning.
 
+## Reason why we chose CNNPolicy (Convolutional Neural Network) over MLPPolicy (Multilayer Perceptron)
+We chose CNNPolicy (Convolutional Neural Network Policy) for our Deep Q-Learning agent because our environment, an Atari game, provides image-based observations. CNNs are specifically designed to process spatial information in images, allowing the agent to automatically extract important features like objects and movement patterns. In contrast, MLPs (Multilayer Perceptrons) would require flattening the images, which loses crucial spatial relationships, making CNNs the better choice for achieving higher performance in Atari environments.
+
 ## 📜 Training Scripts
 ### 1️⃣ Training Script (train.py)
 This script is responsible for training the DQN agent and saving the trained model for later evaluation.
@@ -20,7 +23,7 @@ This script is responsible for training the DQN agent and saving the trained mod
 **Key Steps:**
 - Define the DQN agent using Stable Baselines3.
 - Train the agent with different hyperparameters.
-- Save the trained model as `dqn_model.zip`.
+- Save the trained model as `dqn2_model.zip`.
 - Log training details such as reward trends and episode length.
 
 ### 2️⃣ Playing Script (play.py)
