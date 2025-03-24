@@ -5,8 +5,6 @@ The aim of this project is to train an RL agent to play an Atari game by utilizi
 
 ## 🏆 Roles & Contributions  
 
-To ensure a thorough evaluation of our Deep Q-Learning agent, our team worked collaboratively, distributing tasks based on expertise and project needs. Below is a breakdown of each member’s contributions:  
-
 ### 1️ **Dimitri – Hyperparameter Optimization, Model Training & Environment Setup**  
 Dimitri led the **optimization of model training**, testing multiple hyperparameter configurations to enhance agent performance. He experimented with different **learning rates, discount factors, batch sizes, and exploration strategies**, assessing their impact on training stability and convergence speed.  
 - Set up and fine-tuned **Stable Baselines3** for efficient training.  
