@@ -5,8 +5,11 @@ The aim of this project is to train an RL agent to play an Atari game by utilizi
 
 ### Roles 
 1: Dimitri -- Optimized model training by testing various hyperparameter configurations.
+
 2: Charite --- Processed and analyzed data to track rewards and monitor episode progress.
+
 3: Guled -- Designed and developed visual representations for performance evaluation.
+
 ## Environment Selection
 We selected an Atari game from the Gymnasium collection for training and evaluation. The environment provides a challenging yet structured reinforcement learning task that enables the agent to improve over time through deep Q-learning.
 
