@@ -1,8 +1,13 @@
 # Deep Q-Learning with Atari [(Video Link)](https://drive.google.com/file/d/1ZdCODAwb2h0Kl1zGzK1hkf5l8Pa9aS33/view?usp=sharing)
 
-## 📌 Project Overview
+##  Project Overview
 The aim of this project is to train an RL agent to play an Atari game by utilizing Stable Baselines3 and Gymnasium in conjunction with Deep Q-Learning. Training the agent and then assessing its performance with a trained model comprise the project.
-## 🎮 Environment Selection
+
+### Roles 
+1: Dimitri -- Optimized model training by testing various hyperparameter configurations.
+2: Charite --- Processed and analyzed data to track rewards and monitor episode progress.
+3: Guled -- Designed and developed visual representations for performance evaluation.
+## Environment Selection
 We selected an Atari game from the Gymnasium collection for training and evaluation. The environment provides a challenging yet structured reinforcement learning task that enables the agent to improve over time through deep Q-learning.
 
 ## 📜 Training Scripts
@@ -30,7 +35,7 @@ This script loads the trained model and runs the agent in the environment for ev
 | lr=5e-4, gamma=0.99, batch=64, eps=0.2 → 0.01 | Faster learning and better strategy development. |
 | lr=1e-3, gamma=0.95, batch=128, eps=0.3 → 0.05 | Faster initial learning but unstable in later episodes. |
 
-## 🚀 Challenges Faced
+##  Challenges Faced
 1️⃣ **Training on CPU was slow** – We leveraged GPU resources for faster training.
 2️⃣ **Rendering issues in headless environments** – We recorded gameplay for later evaluation.
 
@@ -38,6 +43,6 @@ This script loads the trained model and runs the agent in the environment for ev
 After training, the agent was evaluated based on gameplay performance. The trained agent demonstrated improved decision-making and higher rewards compared to the baseline model.
 
 
-## 🎯 Conclusion
+## Conclusion
 This project successfully trained an RL agent using Deep Q-Learning to play an Atari game. By tuning hyperparameters and evaluating performance, we demonstrated the effectiveness of reinforcement learning in complex environments. Future work could explore alternative RL algorithms such as PPO or A2C for comparison.
 
