@@ -1,17 +1,18 @@
 import gymnasium as gym
 from stable_baselines3 import DQN
+from stable_baselines3.dqn.policies import GreedyQPolicy
 import time
-import ale_py
 
-# Create the same Atari environment used in training
-gym.register_envs(ale_py)
+# Create environment
 env = gym.make("ALE/Boxing-v5", render_mode="human")
 
-# Load the trained model with smaller buffer size
-model = DQN.load("dqn2_model.zip", buffer_size=1)
+# Load the trained model
+model = DQN.load("dqn2_model.zip")
 
-# Run a few episodes to evaluate performance
-num_episodes = 2
+# Set the policy to greedy evaluation mode
+model.policy.set_training_mode(False)
+
+num_episodes = 3
 
 for episode in range(num_episodes):
     obs, info = env.reset()
@@ -20,14 +21,14 @@ for episode in range(num_episodes):
     episode_reward = 0
     
     while not (done or truncated):
-        
+        # Use model.predict with deterministic=True for greedy policy
         action, _states = model.predict(obs, deterministic=True)
         obs, reward, done, truncated, info = env.step(action)
         episode_reward += reward
         
-        # Render the environment
         env.render()
         time.sleep(0.01)
+    
     print(f"Episode {episode+1} finished with reward: {episode_reward}")
 
 env.close()
