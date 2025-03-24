@@ -40,7 +40,7 @@ This script loads the trained model and runs the agent in the environment for ev
 2️⃣ **Rendering issues in headless environments** – We recorded gameplay for later evaluation.
 
 ## 🎬 Evaluation: Running play.py
-After training, the agent was evaluated based on gameplay performance. The trained agent demonstrated improved decision-making and higher rewards compared to the baseline model.
+After training, the agent was evaluated based on gameplay performance. The trained agent demonstrated improved decision-making and higher rewards compared to the baseline model. **The Episode Reward** achieved during evaluation was **10**.
 
 
 ## Conclusion
